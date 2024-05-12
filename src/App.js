@@ -6,7 +6,7 @@ function App() {
     <div>
       <h1>Cookies and Beyond</h1>
       <h3>Where cookie maniacs gather</h3>
-      <img src="https://media.licdn.com/dms/image/C4E12AQEIFcEMGt4x5g/article-cover_image-shrink_720_1280/0/1591728324800?e=2147483647&v=beta&t=B5BzU1Zxe6TrM-UCS_SD68CsFzk-FB7rkHQdgYjNAjk"></img>
+      <img src="https://media.licdn.com/dms/image/C4E12AQFOrT3P3_W0lQ/article-inline_image-shrink_1000_1488/0/1591728503689?e=1721260800&v=beta&t=lAILzo2BT46ZzhczSC9VVrB22kRE42YUIMwjEMcFuqs"></img>
     </div>
   );
 }
