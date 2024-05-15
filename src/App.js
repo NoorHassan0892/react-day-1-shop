@@ -1,12 +1,34 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Title from "./component/Title";
+import Image from "./component/Image";
+import { products } from "./component/products";
 
 function App() {
+  const productlist = products.map((product) => {
+    return (
+      <>
+        <h1>{product.name}</h1>
+        <img src={product.img} />
+        <h3>{product.price}</h3>
+      </>
+    );
+  });
   return (
     <div>
-      <h1>Cookies and Beyond</h1>
-      <h3>Where cookie maniacs gather</h3>
-      <img src="https://media.licdn.com/dms/image/C4E12AQFOrT3P3_W0lQ/article-inline_image-shrink_1000_1488/0/1591728503689?e=1721260800&v=beta&t=lAILzo2BT46ZzhczSC9VVrB22kRE42YUIMwjEMcFuqs"></img>
+      <Title />
+      <Image />
+      <div
+        style={{
+          display: "flex",
+          gap: "10px",
+          width: "100px",
+          height: "100px",
+          border: "solid",
+        }}
+      >
+        {productlist}
+      </div>
     </div>
   );
 }
